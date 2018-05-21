@@ -4,6 +4,7 @@
 #include"QLSinhvien.h"
 #include"QLMonhoc.h"
 #include"QLDangkymonhoc.h"
+#include"QLKetqua.h"
 int main()
 {
 	//QL_DSSV *y = new QL_DSSV;
@@ -22,11 +23,12 @@ int main()
 		cout << "\n\t\t4.QUAN LI SINH VIEN ";
 		cout << "\n\t\t5.QUAN LI MON HOC ";
 		cout << "\n\t\t6.QUAN LI DANG KY MON HOC ";
+		cout << "\n\t\t7.QUAN LI KET QUA ";
 		cout << "\n\t=====================            END              ===================== ";
 		int luachon;
 		cout << "\nLUA CHON CUA BAN:";
 		cin >> luachon;
-		if (luachon>6 || luachon<0)
+		if (luachon>7 || luachon<0)
 		{
 			cout << "\nLUA CHON KO HOP LE.XIN VUI LONG NHAP LAI!!";
 			system("pause");
@@ -55,6 +57,10 @@ int main()
 		{
 			QLDangkymonhoc::getInstance()->Submenu6();
 		}
+		else if (luachon==7)
+		{
+			QLKetqua::getInstance()->Submenu7();
+		}
 		else
 		{
 			break;
@@ -67,6 +73,7 @@ int main()
 	delete QLSinhvien::getInstance();
 	delete QLMonhoc::getInstance();
 	delete QLDangkymonhoc::getInstance();
+	delete QLKetqua::getInstance();
 	system("pause");
 	return 0;
 }

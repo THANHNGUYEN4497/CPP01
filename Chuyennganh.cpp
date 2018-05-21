@@ -45,9 +45,10 @@ Chuyennganh::Chuyennganh()
 
 Chuyennganh::Chuyennganh(string Ten, string Ma,string Khoa) :TenChuyennganh(Ten), MaChuyennganh(Ma),Makhoa(Khoa)
 {
-
+	
 }
 Chuyennganh::~Chuyennganh()
 {
+	
 }
 

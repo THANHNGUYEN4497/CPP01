@@ -13,6 +13,7 @@ public:
 	void Input();
 	void Output();
 	Dangkymonhoc *qldkmh;
+	Dangkymonhoc *qldkmh2;
 	Ketqua();
 	Ketqua(string Ma, string Ngay, string diem);
 	~Ketqua();

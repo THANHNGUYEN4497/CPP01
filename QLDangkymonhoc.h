@@ -5,12 +5,15 @@
 #include<iomanip>
 #include<fstream>
 #include"Dangkymonhoc.h"
+//#include"QLMonhoc.h"
 #define MAX 50
 using namespace std;
 class Dangkymonhoc;
+class QLMonhoc;
 class QLDangkymonhoc
 {
 	friend Dangkymonhoc;
+	friend QLMonhoc;
 public:
 	static QLDangkymonhoc *instance;
 	static QLDangkymonhoc *getInstance();
@@ -23,6 +26,7 @@ public:
 	void Submenu6();
 	Dangkymonhoc *Timkiemphu(string Ma);
 	Dangkymonhoc *Timkiemphu2(string a);
+	Dangkymonhoc *Timkiemphu3(string &diem);
 	QLDangkymonhoc();
 	~QLDangkymonhoc();
 private:

@@ -9,9 +9,11 @@
 #define MAX 50
 using namespace std;
 class Monhoc;
+class QLDangkymonhoc;
 class QLMonhoc
 {
 	friend Monhoc;
+	friend QLDangkymonhoc;
 public:
 	static QLMonhoc *instance;
 	static QLMonhoc *getInstance();

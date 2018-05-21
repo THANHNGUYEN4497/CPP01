@@ -94,7 +94,32 @@ Dangkymonhoc *QLDangkymonhoc::Timkiemphu2(string a)
 	}
 	return 0;
 }
-
+Dangkymonhoc *QLDangkymonhoc::Timkiemphu3(string &diem)
+{
+	/*for (int i = 0; i < size; i++)
+	{
+		if (Ma2 == DS_Dangkymonhoc[i]->MaDangkymonhoc)
+		{
+			return DS_Dangkymonhoc[i];
+		}
+	}*/
+	//QLMonhoc x;
+	string Mamontk;
+    cin.ignore();
+	cout << "\nNHAP MA MON CAN NHAP DIEM:";
+	getline(cin, Mamontk);
+	for (int i = 0; i < size; i++)
+	{
+		if (Mamontk==DS_Dangkymonhoc[i]->MaDangkymonhoc)
+		{
+			DS_Dangkymonhoc[i]->Output();
+			fflush(stdin);
+			cout << "\nNHAP DIEM:";
+			getline(cin, diem);
+		}
+	}
+	return 0;
+}
 void QLDangkymonhoc::LuufileDangkymonhoc()
 {
 	ofstream fileout;
